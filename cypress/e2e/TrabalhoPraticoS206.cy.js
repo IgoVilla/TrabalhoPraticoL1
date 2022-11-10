@@ -14,7 +14,7 @@ describe('Teste para o site do Trabalho Pratico 1', () => {
     cy.get('.actions > input').click() 
     cy.get('.row.center').should('contain.text','Usuário Criado com sucesso')
   })
-    it('Testando criação de usuario', () => {
+    it('Testando edição de usuario', () => {
     cy.visit('https://automacaocombatista.herokuapp.com/treinamento/home')
     cy.get(':nth-child(1) > .collapsible-header').click()
     cy.get('.active > .collapsible-body > ul > :nth-child(2) > a').click()
